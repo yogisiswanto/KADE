@@ -3,5 +3,5 @@
     <item name="gambar" type="id"></item>
     <item name="clubList" type="id"></item>
     <item name="name" type="id"></item>
-    <item name="linear" type="id"/>
+    <item name="linear" type="id"></item>
 </resources>

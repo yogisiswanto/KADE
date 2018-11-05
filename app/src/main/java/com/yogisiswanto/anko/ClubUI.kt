@@ -7,6 +7,7 @@ import org.jetbrains.anko.*
 
 class ClubUI() : AnkoComponent<ViewGroup> {
     override fun createView(ui: AnkoContext<ViewGroup>): View {
+
         return with(ui){
             linearLayout {
                 id = R.id.linear
@@ -14,14 +15,16 @@ class ClubUI() : AnkoComponent<ViewGroup> {
                 orientation = LinearLayout.HORIZONTAL
 
                 imageView {
+
                     id = R.id.gambar
-                    setImageResource(R.drawable.barcelona)
+//                    setImageResource(R.drawable.barcelona)
                 }
                     .lparams(width = dip(50), height = dip(50))
 
                 textView {
+
                     id = R.id.name
-                    text = "Barcelona"
+//                    text = "Barcelona"
                 }
                     .lparams {
                         width = wrapContent

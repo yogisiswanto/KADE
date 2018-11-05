@@ -30,6 +30,7 @@ import org.jetbrains.anko.AnkoContext
 class RecyclerViewAdapter(private val context: Context, private val items: List<Item>, private val listener: (Item) -> Unit)
     : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(){
 
+
     //creating function ViewHolder
 //    override fun onCreateViewHolder(parent: ViewGroup, viewTyoe: Int) = ViewHolder(LayoutInflater.from(context).inflate(R.id.linear), parent, false))
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -49,14 +50,17 @@ class RecyclerViewAdapter(private val context: Context, private val items: List<
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
 
         private val name = view.findViewById<TextView>(R.id.name)
-        private val image = view.findViewById<ImageView>(R.id.image)
+        private val image = view.findViewById<ImageView>(R.id.gambar)
 
         fun bindItem(items: Item, listener: (Item) -> Unit){
+
+
             name.text = items.name
             items.image?.let { Picasso.get().load(it).into(image) }
             itemView.setOnClickListener{
                 listener(items)
             }
+//            println(items.name)
         }
     }
 }

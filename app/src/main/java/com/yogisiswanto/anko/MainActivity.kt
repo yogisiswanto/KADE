@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.widget.Toast
 import com.yogisiswanto.football.RecyclerViewAdapter
 import org.jetbrains.anko.setContentView
@@ -23,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         //calling initData Function
         initData()
 
+
+
         //calling linear layout
         list.layoutManager = LinearLayoutManager(this)
 
@@ -30,6 +33,12 @@ class MainActivity : AppCompatActivity() {
         //input context and Items class
         //showing Toast when clicked
         list.adapter = RecyclerViewAdapter(this, items){
+
+            for(i in items.indices){
+
+                println(items[i].name)
+            }
+
             val toast = Toast.makeText(applicationContext, it.name, Toast.LENGTH_SHORT)
             toast.show()
         }
@@ -49,7 +58,11 @@ class MainActivity : AppCompatActivity() {
         for(i in name.indices){
 
             items.add(Item(name[i], image.getResourceId(i, 0)))
+//            items.add(Item(name[i], image.getResourceId(i,0)))
+//            System.out.println(resources.getResourceEntryName(image.getResourceId(i, 0)))
         }
+        Log.e("info", items.size.toString())
+
 
         image.recycle()
     }
