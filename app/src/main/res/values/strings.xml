@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Anko</string>
+
+    <string-array name="club_name">
+        <item>Barcelona FC</item>
+        <item>Real Madrid FC</item>
+        <item>Bayern Munchen FC</item>
+        <item>Manchester City FC</item>
+        <item>Manchester United FC</item>
+        <item>Chealse FC</item>
+        <item>AC Milan FC</item>
+        <item>Arsenal FC</item>
+    </string-array>
+
+    <array name="club_image">
+        <item>R.drawable.barcelona</item>
+        <item>@drawable/realmadrid</item>
+        <item>@drawable/bayer</item>
+        <item>@drawable/manchestercity</item>
+        <item>@drawable/manchesterunited</item>
+        <item>@drawable/chealse</item>
+        <item>@drawable/acmilan</item>
+        <item>@drawable/arsenal</item>
+    </array>
+</resources>
