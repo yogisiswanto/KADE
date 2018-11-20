@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">Anko</string>
+    <string name="app_name">FootBall Club</string>
 
+    <!--array for FootBall Club name-->
     <string-array name="club_name">
         <item>Barcelona FC</item>
         <item>Real Madrid FC</item>
@@ -12,6 +13,7 @@
         <item>Arsenal FC</item>
     </string-array>
 
+    <!--array resource FootBall club-->
     <array name="club_image">
         <item>@drawable/barcelona</item>
         <item>@drawable/realmadrid</item>
@@ -22,4 +24,33 @@
         <item>@drawable/acmilan</item>
         <item>@drawable/arsenal</item>
     </array>
+
+    <!--array description for FootBall club-->
+    <string-array name="club_description">
+        <item>Futbol Club Barcelona, known simply as Barcelona and colloquially as Barça, is a professional football
+            club based in Barcelona, Catalonia, Spain
+        </item>
+        <item>Real Madrid Club de Fútbol, commonly known as Real Madrid, is a professional football club based in
+            Madrid, Spain
+        </item>
+        <item>Fußball-Club Bayern München e.V., commonly known as FC Bayern München, FCB, Bayern Munich, or FC Bayern,
+            is a German sports club based in Munich, Bavaria (Bayern)
+        </item>
+        <item>Manchester City Football Club, commonly known as City, is a football club in Manchester, England. Founded
+            in 1880 as St. Marks (West Gorton)
+        </item>
+        <item>Manchester United Football Club, commonly known as Man. United or simply United, is a professional
+            football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League
+        </item>
+        <item>Chelsea Football Club is a professional football club in London, England, that competes in the Premier
+            League. Founded in 1905, the clubs home ground since then has been Stamford Bridge
+        </item>
+        <item>Associazione Calcio Milan, commonly referred to as A.C. Milan or simply Milan, is a professional football
+            club in Milan, Italy, founded in 1899.
+        </item>
+        <item>Arsenal Football Club is a professional football club based in Islington, London, England, that plays in
+            the Premier League, the top flight of English football
+        </item>
+    </string-array>
+
 </resources>
