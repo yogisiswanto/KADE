@@ -34,9 +34,6 @@ class LastMatchFragment : Fragment(), MainView {
     private lateinit var presenter: MainPresenter
     private lateinit var adapter: MainAdapter
     private lateinit var league: String
-    //    private lateinit var progressBar: ProgressBar
-    private lateinit var mRecyclerView: RecyclerView
-//    private lateinit var swipeRefresh: SwipeRefreshLayout
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -66,15 +63,6 @@ class LastMatchFragment : Fragment(), MainView {
 
             presenter.getTeamList(league)
         }
-
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-//        val llm = LinearLayoutManager(context)
-//        llm.orientation = LinearLayoutManager.VERTICAL
-
-
 
     }
 
