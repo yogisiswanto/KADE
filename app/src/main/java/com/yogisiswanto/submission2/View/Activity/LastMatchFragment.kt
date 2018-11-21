@@ -48,7 +48,10 @@ class LastMatchFragment : Fragment(), MainView {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        listTeam.layoutManager = LinearLayoutManager(context)
+        val llm = LinearLayoutManager(this.context)
+        llm.orientation = LinearLayoutManager.VERTICAL
+
+        listTeam.layoutManager = llm
         adapter = MainAdapter(teams)
         listTeam.adapter = adapter
         league = "4335"
